@@ -6,6 +6,7 @@ import argparse
 import os.path as osp
 import glob
 
+sys.path.append('/home/kfbb/TFFRCNN')
 this_dir = osp.dirname(__file__)
 print(this_dir)
 

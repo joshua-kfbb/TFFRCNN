@@ -13,6 +13,9 @@ data/cache/*
 data/pretrain_model
 data/VOC*
 data/KITTI*
+data/WIDER
+data/FDDB
+data/demo
 output
 logs
 utest

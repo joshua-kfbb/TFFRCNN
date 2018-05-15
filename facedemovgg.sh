@@ -1,0 +1,1 @@
+python faster_rcnn/tbfacedemo.py --net VGGnet_test --model output/wider_nvgg/wider/nvgg_frcnn_wider_iter_70000.ckpt

@@ -34,7 +34,7 @@ cfg = __C
 # region proposal network (RPN) or not
 __C.IS_RPN = True
 __C.ANCHOR_SCALES = [8, 16, 32]
-__C.NCLASSES = 21
+__C.NCLASSES = 2
 
 # multiscale training and testing
 __C.IS_MULTISCALE = False
@@ -80,7 +80,7 @@ __C.TRAIN.SCALES = (600,)
 __C.TRAIN.MAX_SIZE = 1000
 
 # Images to use per minibatch
-__C.TRAIN.IMS_PER_BATCH = 2
+__C.TRAIN.IMS_PER_BATCH = 1
 
 # Minibatch size (number of regions of interest [ROIs])
 __C.TRAIN.BATCH_SIZE = 128

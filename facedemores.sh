@@ -1,0 +1,1 @@
+python faster_rcnn/tbfacedemo.py --net Resnet50_test --model output/wider/wider/res50_frcnn_wider_iter_70000.ckpt

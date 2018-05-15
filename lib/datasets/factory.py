@@ -19,6 +19,12 @@ from .nthu import nthu
 from .coco import coco
 from .kittivoc import kittivoc
 
+from .face import face
+wider_devkit_path = 'data/WIDER'
+for split in ['train','test']:
+    name = '{}_{}'.format('wider',split)
+    __sets[name] = (lambda split = split: face(split, 0, wider_devkit_path))
+
 def _selective_search_IJCV_top_k(split, year, top_k):
     """Return an imdb that uses the top k proposals from the selective search
     IJCV code.
@@ -63,7 +69,6 @@ for year in ['2015']:
 # NTHU dataset
 for split in ['71', '370']:
     name = 'nthu_{}'.format(split)
-    print name
     __sets[name] = (lambda split=split: nthu(split))
 
 

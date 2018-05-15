@@ -60,8 +60,8 @@ class VGGnet_test(Network):
 
         (self.feed('conv5_3', 'rois')
          .roi_pool(7, 7, 1.0 / 16, name='pool_5')
-         .fc(4096, name='fc6')
-         .fc(4096, name='fc7')
+         .fc(1024, name='fc6')
+         .fc(1024, name='fc7')
          .fc(n_classes, relu=False, name='cls_score')
          .softmax(name='cls_prob'))
 
